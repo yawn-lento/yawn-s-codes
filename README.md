@@ -1,2 +1,2 @@
 # yawn-s-codes
-some
+some personal practices
