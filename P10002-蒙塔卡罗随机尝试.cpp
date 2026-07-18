@@ -66,4 +66,4 @@ int main()
 		flag = 0;
 	}
 	cout << valid<<endl;
-}
+}//本地跑总是超时，只能借鉴一下模型思路
