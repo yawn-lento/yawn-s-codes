@@ -1,2 +1,2 @@
-# yawn-s-codes
-some personal practices
+洛谷刷题记录
+主要为普及以及普及减难度
