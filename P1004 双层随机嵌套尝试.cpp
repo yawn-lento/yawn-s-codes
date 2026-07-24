@@ -1,10 +1,9 @@
-﻿#include <iostream>
+#include <iostream>
 #include<vector>
 #include <cstdlib>
 #include <ctime>
 #include <algorithm>
 #include <cstring>
-#pragma warning(disable: 6385)
 using namespace std;
 int num[9][9] = { 0 };
 int temp[9][9] = { 0 };
@@ -32,10 +31,10 @@ int main()
 		fill(x, y, v);
 	}
 	int attempt1 = 0, attempt2 = 0;
-	int sum_1[13000] = { 0 };
-	int sum_2[13000] = { 0 };
+	int sum_1[100] = { 0 };
+	int sum_2[100] = { 0 };
 	int tempx, tempy, fork;
-	while (attempt1 < 1300)
+	while (attempt1 < 100)
 	{
 		tempx = tempy = 0;
 		while (tempx < N-1 || tempy < N-1)
@@ -52,7 +51,7 @@ int main()
 			sum_1[attempt1] += num[tempx][tempy];
 			num[tempx][tempy] = 0;
 		}
-		while (attempt2 < 1300)
+		while (attempt2 < 100)
 		{
 			tempx = tempy = 0;
 			while (tempx < N - 1 || tempy < N - 1)
@@ -77,7 +76,7 @@ int main()
 		memcpy(num, temp, sizeof(num));
 		memset(sum_2, 0, sizeof(sum_2)); 
 	}
-	sort(sum_1, sum_1 + attempt1, cmp);a
+	sort(sum_1, sum_1 + attempt1, cmp);
 	cout << sum_1[0] +num[0][0]<< endl;
 	return 0;
 }
